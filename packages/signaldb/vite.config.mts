@@ -12,21 +12,21 @@ export default defineConfig({
   ],
   build: {
     manifest: true,
-    minify: false,
-    sourcemap: false,
+    minify: true,
+    sourcemap: true,
     reportCompressedSize: true,
     lib: {
       name: 'SignalDB',
       entry: path.resolve(__dirname, 'src/index.ts'),
       fileName: format => (format === 'es' ? 'index.mjs' : `index.${format}.js`),
-      formats: ['es', 'cjs'],
+      // formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      output: {
-        inlineDynamicImports: false,
-        preserveModules: true,
-        format: 'es',
-      },
+      // output: {
+      //   inlineDynamicImports: false,
+      //   preserveModules: true,
+      //   format: 'es',
+      // },
       external: [
         'fast-sort',
         'fs',
