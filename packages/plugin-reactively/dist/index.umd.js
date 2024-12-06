@@ -1,0 +1,2 @@
+(function(e,i){typeof exports=="object"&&typeof module<"u"?module.exports=i(require("@reactively/core"),require("signaldb")):typeof define=="function"&&define.amd?define(["@reactively/core","signaldb"],i):(e=typeof globalThis<"u"?globalThis:e||self,e.SignalDB=i(e.core,e.signaldb))})(this,function(e,i){"use strict";return i.createReactivityAdapter({create:()=>{const t=e.reactive(0);return{depend:()=>{t.get()},notify:()=>{t.set(t.value+1)}}},isInScope:void 0,onDispose:t=>{e.onCleanup(t)}})});
+//# sourceMappingURL=index.umd.js.map

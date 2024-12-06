@@ -1,0 +1,2 @@
+(function(e,i){typeof exports=="object"&&typeof module<"u"?module.exports=i(require("@preact/signals-core"),require("signaldb")):typeof define=="function"&&define.amd?define(["@preact/signals-core","signaldb"],i):(e=typeof globalThis<"u"?globalThis:e||self,e.SignalDB=i(e.signalsCore,e.signaldb))})(this,function(e,i){"use strict";return i.createReactivityAdapter({create:()=>{const t=e.signal(0);return{depend:()=>{t.value},notify:()=>{t.value=t.peek()+1}}},isInScope:void 0,onDispose:void 0})});
+//# sourceMappingURL=index.umd.js.map

@@ -1,0 +1,2 @@
+(function(e,n){typeof exports=="object"&&typeof module<"u"?module.exports=n(require("@angular/core"),require("signaldb")):typeof define=="function"&&define.amd?define(["@angular/core","signaldb"],n):(e=typeof globalThis<"u"?globalThis:e||self,e.SignalDB=n(e.core,e.signaldb))})(this,function(e,n){"use strict";return n.createReactivityAdapter({create:()=>{const t=e.signal(0);return{depend:()=>{t()},notify:()=>{t.set(e.untracked(()=>t()+1))}}}})});
+//# sourceMappingURL=index.umd.js.map

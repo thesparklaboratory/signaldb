@@ -1,0 +1,2 @@
+(function(e,n){typeof exports=="object"&&typeof module<"u"?module.exports=n(require("mobx"),require("signaldb")):typeof define=="function"&&define.amd?define(["mobx","signaldb"],n):(e=typeof globalThis<"u"?globalThis:e||self,e.SignalDB=n(e.mobx,e.signaldb))})(this,function(e,n){"use strict";return n.createReactivityAdapter({create:()=>{const t=e.observable({count:0});return{depend:()=>{t.count},notify:()=>{e.runInAction(()=>{t.count+=1})},raw:t}},isInScope:void 0,onDispose(t,{raw:i}){e.onBecomeUnobserved(i,"count",t)}})});
+//# sourceMappingURL=index.umd.js.map

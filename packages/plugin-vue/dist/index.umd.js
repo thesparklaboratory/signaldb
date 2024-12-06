@@ -1,0 +1,2 @@
+(function(e,t){typeof exports=="object"&&typeof module<"u"?module.exports=t(require("vue"),require("signaldb")):typeof define=="function"&&define.amd?define(["vue","signaldb"],t):(e=typeof globalThis<"u"?globalThis:e||self,e.SignalDB=t(e.vue,e.signaldb))})(this,function(e,t){"use strict";return t.createReactivityAdapter({create:()=>{const i=e.shallowRef(0);return{depend:()=>{i.value},notify:()=>{e.triggerRef(i)}}},onDispose:i=>{e.onScopeDispose(i,!0)}})});
+//# sourceMappingURL=index.umd.js.map

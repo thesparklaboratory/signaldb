@@ -1,0 +1,2 @@
+(function(e,i){typeof exports=="object"&&typeof module<"u"?module.exports=i(require("@maverick-js/signals"),require("signaldb")):typeof define=="function"&&define.amd?define(["@maverick-js/signals","signaldb"],i):(e=typeof globalThis<"u"?globalThis:e||self,e.SignalDB=i(e.signals,e.signaldb))})(this,function(e,i){"use strict";return i.createReactivityAdapter({create:()=>{const t=e.signal(0);return{depend:()=>{t()},notify:()=>{t.set(e.peek(()=>t()+1))}}},isInScope:()=>!!e.getScope(),onDispose:t=>e.onDispose(t)})});
+//# sourceMappingURL=index.umd.js.map

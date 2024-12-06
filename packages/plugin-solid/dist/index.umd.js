@@ -1,0 +1,2 @@
+(function(e,i){typeof exports=="object"&&typeof module<"u"?module.exports=i(require("signaldb"),require("solid-js")):typeof define=="function"&&define.amd?define(["signaldb","solid-js"],i):(e=typeof globalThis<"u"?globalThis:e||self,e.SignalDB=i(e.signaldb,e.solidJs))})(this,function(e,i){"use strict";return e.createReactivityAdapter({create:()=>{const[n,t]=i.createSignal(void 0,{equals:!1});return{depend:()=>{n()},notify:()=>{t()}}},isInScope:()=>!!i.getOwner(),onDispose:n=>{i.onCleanup(n)}})});
+//# sourceMappingURL=index.umd.js.map
